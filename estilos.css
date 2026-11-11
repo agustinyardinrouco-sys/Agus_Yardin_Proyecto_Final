@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: #f1f5f9;
+}
+a {
+    color: #8bc9ff;
+    text-decoration: none;
+}
+.encabezado {
+    background: #172338;
+    padding: 15px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 145px;
+    height: 55px;
+    object-fit: contain;
+}
+nav a {
+    margin-left: 18px;
+    color: #e5edf8;
+}
+.bienvenida {
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: #1b2c45;
+}
+.bienvenida h1 {
+    font-size: 38px;
+    max-width: 500px;
+}
+.bienvenida p {
+    color: #c2d0e0;
+}
+.etiqueta {
+    color: #77c5ff !important;
+    font-size: 13px;
+}
+.imagen-portada {
+    width: 42%;
+    height: 250px; /* Define una altura fija más baja */
+    border: 1px dashed #6684a8;
+    border-radius: 8px;
+    overflow: hidden; /* Evita que la imagen se salga de los bordes redondeados */
+}
+
+.imagen-portada img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del recuadro */
+    height: 100%; /* Ajusta la altura al 100% del contenedor (250px) */
+    object-fit: cover; /* Recorta la imagen sin deformarla para que encaje bien */
+    display: block;
+}
+.boton {
+    display: inline-block;
+    background: #2676bd;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 17px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.boton-secundario {
+    background: #34465e;
+}
+.boton-chico {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.seccion {
+    padding: 35px 7%;
+}
+.texto-suave {
+    color: #aebed0;
+}
+.juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #171b2b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.juego-imagen {
+    width: 100%;
+    height: 190px;
+}
+
+.juego-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-contenido {
+    padding: 15px;
+}
+.tarjeta-contenido p {
+    color: #c0ccda;
+    font-size: 14px;
+}
+.formulario-pagina {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.formulario {
+    background: #1b2a40;
+    padding: 28px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 440px;
+}
+.formulario label {
+    display: block;
+    margin-top: 13px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #53677f;
+    border-radius: 4px;
+    background: #101827;
+    color: white;
+}
+textarea {
+    min-height: 90px;
+}
+.error {
+    color: #ff9999;
+}
+.mensaje {
+    color: #9be2b0;
+}
+.panel {
+    max-width: 850px;
+    margin: auto;
+}
+.buscador {
+    display: flex;
+    gap: 10px;
+    max-width: 650px;
+}
+.tabla-contenedor {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #1b2a40;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #40536b;
+    text-align: left;
+}
+th {
+    background: #263b57;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aebed0;
+}
+@media (max-width: 650px) {
+    .encabezado, .bienvenida { flex-direction: column; align-items: flex-start; }
+    nav a { margin: 0 12px 0 0; }
+    .imagen-portada { width: 100%; }
+    .bienvenida h1 { font-size: 30px; }
+}
